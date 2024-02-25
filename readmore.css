@@ -483,6 +483,13 @@ body{
         font-size: x-large;
         margin-left: 0;
     }
+.abouta
+	{
+    color: red;
+    margin-top: 50px;
+    font-size: xx-large;
+    inline-size: max-content;
+	}
     .dd
     {
         font-size: small;
