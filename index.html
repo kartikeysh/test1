@@ -17,17 +17,19 @@
 
 </head>
 <body>
-    <a href="https://api.whatsapp.com/send?phone=9868523515&text=Hello this is the starting message"><img src="https://static.vecteezy.com/system/resources/previews/022/101/124/original/whatsapp-logo-transparent-free-png.png" width="70px"></a>
+    <a href="https://api.whatsapp.com/send?phone=000000000&text=Hello this is the starting message" class="whatsapp" ><img src="https://static.vecteezy.com/system/resources/previews/022/101/124/original/whatsapp-logo-transparent-free-png.png" width="70px"></a>
 <div class="navbar">
-    <input type="checkbox" id="check" style="opacity: 0;">
+    <input type="checkbox" id="check" style="display: none;">
     <label for="check">
-        <i class="fa fa-bars" id="btn" style="font-size:20px;color:white"></i>
-        <i class="fa fa-times" id="cancel" style="font-size:20px;color:white"></i>
+        <i class="fa fa-bars" id="btn" style="font-size:20px;color:white" onclick="openNav()"></i>
+       
     </label>
 <div class="PE">
+    <div class="phonedetails">
 <i class="fa fa-phone-square"  style="font-size:20px;color:red"></i>
 
 <span class="phone" style="color:aliceblue;">99958xxxxx</span>
+</div>
 
 
 <i class="fa fa-envelope" style="font-size:20px;color:red" id="mailicon"></i>
@@ -50,7 +52,9 @@
     <a href="#pro" class="dxd"> Product</a></span>
 </span> --> 
 <!-- navbar start-->
-<ul>
+<ul class="navlist">
+    
+    <li> <i class="fa fa-times" id="cancel" style="font-size:20px;color:white" onclick="closeNav()"></i></li>
     <li>  <a href="#home" class="dxd"> Home</a>  </li>
     <li><a href="#ABOUTUS" class="dxd"> About us</a></li>
     <li> <a href="#pro" class="dxd"> Product</a></li>
@@ -71,7 +75,7 @@
 
 <div class="swiper-wrapper">
   <!-- Slides -->
-  <div class="swiper-slide"><img src="./iamges/cabin.jpg" alt="" srcset="" height="500px"></div>
+  <div class="swiper-slide"><img src="./iamges/cabin.jpg" alt="" srcset="" height="500px" width="500px"></div>
   <div class="swiper-slide"><img src="./iamges/hydraulic.jpg" alt="" srcset=""></div>
   <div class="swiper-slide"><img src="./iamges/air.jpg" alt="" srcset=""></div>
   
@@ -93,7 +97,7 @@
   
   
   
-<b style="margin-left: 10%;">Industries</b><br>
+
 
 <p class="cont">
 
@@ -111,8 +115,23 @@
 <h3 class="second">-  Filters-</h3>
 <h1 class="Product">OUR PRODUCT</h1>
 <div class="imagep">
+    <div class="image1">
 <img src="./iamges/air.jpg" class="image 1" width="200px">
+<div class="overlay">
+    <div class="text"><p style="color: red;">AIR FILTERS</p>
+        The air filter traps dirt particles, which can cause damage to engine cylinders
+        Changing car's filters.</div>
+  </div>
+  </div>
+  <div class="image1">
 <img src="./iamges/fuel.jpg" class="image 2" width="200px">
+<div class="overlay">
+    <div class="text"><p style="color: red;">FUEL FILTERS</p>
+        
+The function of fuel filters is to screen out dirt and debris present in fuel from entering the engine.
+ This is important because, dirt and debris.</div>
+  </div>
+</div>
 <img src="./iamges/hydraulic.jpg" class="image 3" width="200px">
 <img src="./iamges/cabin.jpg" class="image 4" width="200px">
 </div>
@@ -122,8 +141,8 @@
         <h2 class="coo">Contact Us</h2>
          <div class="cc">
             <div class="system">
-            <h1 style="color:red"></h1>
-            <h1 style="color:rgb(255, 255, 255); margin-top: -20px; margin-left: 20px;"> Industries</h1>
+            <h1 style="color:red">Shree Shyam</h1>
+            <h1 style="color:rgb(255, 255, 255); margin-top: -1px; margin-left: 20px;"> Industries</h1>
             <h1 class="noo">+9198685xxx5</h1>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kartikeysharmagor@gmail.com" target="_self" style="color:rgb(171, 168, 168);">kartikeysharmagor@gmail.com</a>
             </div>
