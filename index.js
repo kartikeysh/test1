@@ -36,11 +36,13 @@ function reveal(){
   }
 
 
-}const checkbox = document.getElementById('check');
+}
+var checkbox = document.getElementById('check');
 const navbarUL = document.querySelector('.navbar ul');
 const icg = document.getElementById('btn');
 const igc = document.getElementById('cancel');
-
+const menuItems = document.querySelectorAll('.dxd')
+console.log(menuItems)
 function checkb() {
     if (checkbox.checked) {
         navbarUL.style.left = '0';
@@ -57,14 +59,24 @@ function checkb() {
 //   checkb;
   
 // }
+function openNav() {
+  checkbox.addEventListener( "change", checkb );
+}
+function closeNav()
+{
+  checkbox.checked = false;
+  console.log("working")
+  checkb();
+}
 
-checkbox.addEventListener('change', checkb);
-
-const menuItems = document.querySelectorAll('.navbar ul li a');
+  
+  // checkb();
+  
 
 menuItems.forEach(item => {
     item.addEventListener('click', () => {
         checkbox.checked = false;
+        console.log("working")
         checkb(); // Call the checkb function to update the styles
     });
 });
