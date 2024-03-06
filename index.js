@@ -37,21 +37,32 @@ function reveal(){
 
 
 }
+
 var checkbox = document.getElementById('check');
 const navbarUL = document.querySelector('.navbar ul');
 const icg = document.getElementById('btn');
 const igc = document.getElementById('cancel');
 const menuItems = document.querySelectorAll('.dxd')
+const body = document.querySelector( 'body' ); 
+var x = window.matchMedia("(max-width: 1000px)")
 console.log(menuItems)
 function checkb() {
+  
+  if (x.matches) {
     if (checkbox.checked) {
+       
+
         navbarUL.style.left = '0';
         navbarUL.style.zIndex = '1000';
-       
+        navbarUL.style.width = '70%';
+        navbarUL.style.setProperty("box-shadow", "5px 0 50px rgba(125, 124, 124, 0.5)"); 
+        body.style.setProperty(" overflow"," hidden;")      
     } else {
-        navbarUL.style.left = '-100%'; // Change this to -100% to hide the menu
+        navbarUL.style.left = '-100%';
+        navbarUL.style.width = '100%';  // Change this to -100% to hide the menu
       
     }
+  }
 }
 // if(checkbox.checked)
 // {
@@ -60,14 +71,17 @@ function checkb() {
   
 // }
 function openNav() {
+  if (x.matches) {
   checkbox.addEventListener( "change", checkb );
+  }
 }
-function closeNav()
-{
-  checkbox.checked = false;
-  console.log("working")
-  checkb();
-}
+// function closeNav()
+// {
+//   checkbox.checked = false;
+//   console.log("working")
+//   checkb();
+// }
+checkbox.addEventListener('change',checkb)
 
   
   // checkb();
@@ -80,4 +94,21 @@ menuItems.forEach(item => {
         checkb(); // Call the checkb function to update the styles
     });
 });
+
+
+document.addEventListener('click', function(event) {
+  if (!navbarUL.contains(event.target) && event.target  !== icg && event.target !== checkbox) {
+    console.log("in if" )  
+    checkbox.checked = false;
+      checkb()
+  }
+  else{
+    console.log("in else")
+ openNav();
+  }
+});
+
+
+
+
 
