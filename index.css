@@ -476,7 +476,7 @@ body{
     .whatsapp
 {
     color: black; position: fixed;
-    bottom: 110px;
+    bottom: 0px;
     right: 0;
 
 }
