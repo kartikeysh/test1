@@ -17,20 +17,20 @@
 
 </head>
 <body>
-    <a href="https://api.whatsapp.com/send?phone=000000000&text=Hello this is the starting message" style="color: black; position: fixed;
-    bottom: 0;
-    right: 0; " class="whatsapp"><img src="https://static.vecteezy.com/system/resources/previews/022/101/124/original/whatsapp-logo-transparent-free-png.png" width="70px"></a>
+    <a href="https://api.whatsapp.com/send?phone=+919958861011&text=Hello this is the starting message" class="whatsapp" ><img src="https://static.vecteezy.com/system/resources/previews/022/101/124/original/whatsapp-logo-transparent-free-png.png" width="70px"></a>
 <div class="navbar">
-    <input type="checkbox" id="check">
+    <input type="checkbox" id="check" style="display: none;">
     <label for="check">
-        <i class="fa fa-bars" id="btn" style="font-size:20px;color:white"></i>
-        <i class="fa fa-times" id="cancel" style="font-size:20px;color:white"></i>
+        <i class="fa fa-bars" id="btn" style="font-size:20px;color:white" onclick="openNav()"></i>
+       
     </label>
 <div class="PE">
+    <div class="phonedetails">
 <i class="fa fa-phone-square"  style="font-size:20px;color:red"></i>
 
 <span class="phone" style="color:aliceblue;">99958xxxxx</span>
-<img src="./iamges/ganesha-stock-photography-clip-art-ganpati-removebg-preview.png" class="ganeshji" style=" width: 40px;">
+</div>
+
 
 <i class="fa fa-envelope" style="font-size:20px;color:red" id="mailicon"></i>
 <span class="email"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kartikeysharmagor@gmail.com" target="_self" style="color:white;">kartikeysharmagor@gmail.com</a></span>
@@ -52,8 +52,13 @@
     <a href="#pro" class="dxd"> Product</a></span>
 </span> --> 
 <!-- navbar start-->
-<ul>
-    <li>  <a href="index.html" class="dxd"> Home</a>  </li>
+<ul class="navlist">
+    
+    <!-- <li> <i class="fa fa-times" id="cancel" style="font-size:20px;color:white" onclick="closeNav()"></i></li> -->
+    <div class ="navcname"><h1 style="color:red">Shree Shyam</h1><br>
+        <h1 style="color:black; margin-top: -20px; margin-left: 20px;"> Industries</h1></div>
+
+    <li>  <a href="./index.html" class="dxd"> Home</a>  </li>
     <li><a href="#ABOUTUS" class="dxd"> About us</a></li>
     <li> <a href="#pro" class="dxd"> Product</a></li>
 </ul>
@@ -73,7 +78,7 @@
 
 <div class="swiper-wrapper">
   <!-- Slides -->
-  <div class="swiper-slide"><img src="./iamges/cabin.jpg" alt="" srcset="" height="500px"></div>
+  <div class="swiper-slide"><img src="./iamges/cabin.jpg" alt="" srcset="" height="500px" width="500px"></div>
   <div class="swiper-slide"><img src="./iamges/hydraulic.jpg" alt="" srcset=""></div>
   <div class="swiper-slide"><img src="./iamges/air.jpg" alt="" srcset=""></div>
   
@@ -97,10 +102,10 @@
   
 
 
-<div class="cont">
+/* <div class="cont">
 
     <p style="color: red;font-size: larger;">SHREE SHYAM Filters & Industries</p>Manufactures all type of automobile filters in the brand name of SHREE SHYAM Filter. They come in all shapes and sizes ranging from very small size fuel filters to heavy duty air-filters. SHREE SHYAM Filters are manufactured to meet original equipment performance requirements. The ability to deliver products of consistently high quality, when and where they are needed is critical to our customers. So we decided long ago that we wanted to be at the 98-99% level day in and day out. Everything we do is geared to achieve it. The value of SHREE SHYAM filter is that it offers the best protection for your engine that money can buy. Better protection means longer engine life and a greater return on your vehicle or equipment investment. SHREE SHYAM filters are second to none in quality, performance, life and precision fit. Every filter manufactured by us is carefully tested on the manufacturing line to assure leak proof performance. Every SHREE SHYAM fuel filter, cartridges of spin-on is engineered and manufactured to the strictest OEM specifications for protection of sensitive fuel systems. SHREE SHYAM heavy duty filters are preventive maintenance tools. A filters real value is to reduce wear, extend the life of engine systems and to minimize maintenance costs.
-
+    
     <br><br> Dirt is the number one enemy of a diesel engine and the filters' job is to capture and hold out DIRT(is any particulate or soluble matter that is out of place) in the life line of an engine. Water in cooling system is not dirt but water in the fuel or lube system is DIRT.Our filters are better maintenance tools,reducing wear and extending parts life further.SHREE SHYAM FILTERS are designed and built for the specific engine system it is assigned to protect.
      
     <br><br> SHREE SHYAM filters offer a full range of products, constantly developing to meet and anticipants, market demands. Experience, modern machinery, continuous research and top qualified technicians, guarantee the complete reliability of SHREE SHYAM filters complying in full with all international quality and performance norms issued by the vehicle and engine manufacturers.
@@ -117,10 +122,9 @@
      
     <br><br>SHREE SHYAM has a range which virtually covers as many applications as the existing number of engine configuration. We make filters for all kinds of vehicles: two wheelers,three wheelers,combines,passenger cars and light trucks both domestic and imported, heavy duty trucks, constructions and mining equipment, Industrial lift trucks, tractors and farm implements, stationery engines, riding lawn mowers, railroad locomotives and even boats. If it has an engine SHREE SHYAM probably makes a filter for it. SHREE SHYAM filters are guaranteed to be free from any defect in workmanship and material during the service life recommended and if fond to be defective will be replaced.
      
-</div>
-</div>
+    </div> */
 
-</div>
+
 
 
 
@@ -128,25 +132,41 @@
 <h3 class="second">-  Filters-</h3>
 <h1 class="Product">OUR PRODUCT</h1>
 <div class="imagep">
-    <img src="./iamges/air.jpg" class="image 1" width="200px">
-    <img src="./iamges/fuel.jpg" class="image 2" width="200px">
-    <img src="./iamges/hydraulic.jpg" class="image 3" width="200px">
-    <img src="./iamges/cabin.jpg" class="image 4" width="200px"></div>
+    <div class="image1">
+<img src="./iamges/air.jpg" class="image 1" width="200px">
+<div class="overlay">
+    <div class="text"><p style="color: red;">AIR FILTERS</p>
+        The air filter traps dirt particles, which can cause damage to engine cylinders
+        Changing car's filters.</div>
+  </div>
+  </div>
+  <div class="image1">
+<img src="./iamges/fuel.jpg" class="image 2" width="200px">
+<!-- <div class="overlay">
+    <div class="text"><p style="color: red;">FUEL FILTERS</p>
+        
+The function of fuel filters is to screen out dirt and debris present in fuel from entering the engine.
+ This is important because, dirt and debris.</div>
+  </div> -->
+</div>
+<img src="./iamges/hydraulic.jpg" class="image 3" width="200px">
+<img src="./iamges/cabin.jpg" class="image 4" width="200px">
+</div>
 </div>
 <div class="CONTECT">
 
         <h2 class="coo">Contact Us</h2>
          <div class="cc">
             <div class="system">
-            <h1 style="color:red"></h1>
-            <h1 style="color:rgb(255, 255, 255); margin-top: -20px; margin-left: 20px;"> Industries</h1>
+            <h1 style="color:red">Shree Shyam</h1>
+            <h1 style="color:rgb(255, 255, 255); margin-top: -1px; margin-left: 20px;"> Industries</h1>
             <h1 class="noo">+9198685xxx5</h1>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kartikeysharmagor@gmail.com" target="_self" style="color:rgb(171, 168, 168);">kartikeysharmagor@gmail.com</a>
             </div>
             <div class="dd">
                 <h4>QUICK LINKS</h4>
                 <ul class="quick">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <br>
                     <li><a href="#ABOUTUS">About us</a></li>
                     <br>
@@ -164,7 +184,7 @@
 </div>
 <!-- this is new part  -->
 
-<script src="index.js"></script>
+<script src="read.js"></script>
 
 </body>
 </html> 
