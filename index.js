@@ -108,6 +108,13 @@ document.addEventListener('click', function(event) {
   }
 });
 
+// auto redirect to call checking
+function contactus(){
+  const phone = document.querySelector(".phone").innerHTML;
+  console.log(phone)
+  navigator.clipboard.writeText(phone);
+  window.location.href = "tel:" + phone
+}
 
 
 
