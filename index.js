@@ -111,10 +111,15 @@ document.addEventListener('click', function(event) {
 // auto redirect to call checking
 function contactus(){
   const phone = document.querySelector(".phone").innerHTML;
-  console.log(phone)
-  navigator.clipboard.writeText(phone);
-  window.location.href = "tel:" + phone
+  //*any element come from html is as string
+  console.log(typeof(phone))
+  const front = "+91" +  phone
+  console.log(front)
+  navigator.clipboard.writeText(front);
+  window.location.href = "tel:" + front
 }
+
+
 
 
 
